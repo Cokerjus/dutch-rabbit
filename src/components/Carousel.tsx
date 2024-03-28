@@ -55,7 +55,7 @@ const items = data.map((view) => {
       className="bg-gray-700 p-3 flex justify-between items-center gap-5 rounded-full h-full mr-5"
       key={view.title}
     >
-      <div className="bg-gray-200 rounded-full p-2">
+      <div className="bg-gray-300 rounded-full p-2 text-[#DC8400]">
         <FaCartArrowDown size={25} />
       </div>
       <p className="text-white text-center max-w-56 w-48">{view.title}</p>

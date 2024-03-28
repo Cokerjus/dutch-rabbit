@@ -1,4 +1,4 @@
-import { Chart, Jumbotron, Tokemonic } from "./components";
+import { Chart, Features, Jumbotron, Tokemonic } from "./components";
 
 export default function App() {
   return (
@@ -6,6 +6,7 @@ export default function App() {
       <Jumbotron />
       <Chart />
       <Tokemonic />
+      <Features />
     </div>
   );
 }
