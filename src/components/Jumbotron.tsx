@@ -28,7 +28,7 @@ function Jumbotron() {
               className="overflow-hidden w-full"
             >
               <div className="w-full rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[1.7px]">
-                <div className="flex h-full w-full items-center justify-center bg-gray-800 rounded-full hover:bg-transparent transition-all duration-500">
+                <div className="flex h-full w-full items-center justify-center bg-black rounded-full hover:bg-transparent transition-all duration-500">
                   <h1 className="text-xl font-semibold text-white uppercase p-2">
                     swap
                   </h1>
