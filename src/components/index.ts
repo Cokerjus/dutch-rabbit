@@ -5,3 +5,6 @@ export { default as Tokemonic } from "./Tokemonic";
 export { default as Carousel } from "./Carousel";
 export { default as Features } from "./Features";
 export { default as RoadMap } from "./RoadMap";
+export { default as Utilities } from "./Utilities";
+export { default as FeatureCard } from "./FeatureCard";
+export { default as Mission } from "./Mission";

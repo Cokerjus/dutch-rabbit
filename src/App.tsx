@@ -1,4 +1,11 @@
-import { Chart, Features, Jumbotron, RoadMap, Tokemonic } from "./components";
+import {
+  Chart,
+  Features,
+  Jumbotron,
+  RoadMap,
+  Tokemonic,
+  Utilities,
+} from "./components";
 
 export default function App() {
   return (
@@ -8,6 +15,7 @@ export default function App() {
       <Tokemonic />
       <Features />
       <RoadMap />
+      <Utilities />
     </div>
   );
 }
