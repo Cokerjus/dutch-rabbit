@@ -2,6 +2,7 @@ import {
   Chart,
   Features,
   Jumbotron,
+  Mission,
   RoadMap,
   Tokemonic,
   Utilities,
@@ -16,6 +17,7 @@ export default function App() {
       <Features />
       <RoadMap />
       <Utilities />
+      <Mission />
     </div>
   );
 }
