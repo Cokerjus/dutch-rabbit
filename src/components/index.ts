@@ -9,3 +9,4 @@ export { default as Utilities } from "./Utilities";
 export { default as FeatureCard } from "./FeatureCard";
 export { default as Mission } from "./Mission";
 export { default as Disclaimer } from "./Disclaimer";
+export { default as Footer } from "./Footer";

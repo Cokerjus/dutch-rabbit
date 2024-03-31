@@ -2,6 +2,7 @@ import {
   Chart,
   Disclaimer,
   Features,
+  Footer,
   Jumbotron,
   Mission,
   RoadMap,
@@ -20,6 +21,7 @@ export default function App() {
       <Utilities />
       <Mission />
       <Disclaimer />
+      <Footer />
     </div>
   );
 }
