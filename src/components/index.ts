@@ -4,3 +4,4 @@ export { default as Chart } from "./Chart";
 export { default as Tokemonic } from "./Tokemonic";
 export { default as Carousel } from "./Carousel";
 export { default as Features } from "./Features";
+export { default as RoadMap } from "./RoadMap";
