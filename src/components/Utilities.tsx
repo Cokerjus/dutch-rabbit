@@ -4,7 +4,7 @@ import { FeatureCard } from ".";
 
 function Utilities() {
   return (
-    <div className="py-5 md:py-8 lg:py-12">
+    <div className="px-5 md:px-0 py-5 md:py-8 lg:py-12">
       <div className="max-w-screen-lg mx-auto">
         <div className="flex flex-col justify-center items-center">
           <h3 className="text-4xl pb-5 tracking-wider font-bold font-display bg-gradient-to-r from-orange-100 to-orange-500 inline-block text-transparent bg-clip-text text-center">

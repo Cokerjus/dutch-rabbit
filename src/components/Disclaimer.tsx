@@ -1,6 +1,6 @@
 function Disclaimer() {
   return (
-    <div className="py-5 md:py-8 lg:py-12">
+    <div className="px-5 md:px-0 py-5 md:py-8 lg:py-12">
       <div className="max-w-screen-lg mx-auto">
         <div className="flex flex-col items-center justify-center h-full w-full text-white bg-gradient-to-r from-[#E1880D]/50 via-transparent to-black backdrop-blur-sm rounded-2xl p-5 py-12">
           <h3 className="text-4xl pb-5 tracking-wider font-normal font-display text-center w-full md:w-3/5 lg:w-2/5">

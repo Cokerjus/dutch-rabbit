@@ -2,7 +2,10 @@ import AliceCarousel from "react-alice-carousel";
 
 const responsive = {
   0: {
-    items: 2,
+    items: 1,
+  },
+  512: {
+    items: 1,
   },
 
   //   768: {
