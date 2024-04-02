@@ -2,7 +2,7 @@ import TradingViewWidget from "./TradingViewWidget";
 
 function Chart() {
   return (
-    <div className="flex flex-col justify-center items-center py-5 md:py-10">
+    <div className="flex flex-col justify-center items-center px-5 md:px-0 py-5 md:py-10">
       <h3 className="text-white text-4xl font-bold font-display tracking-wider">
         Easily trade with our bot
       </h3>
