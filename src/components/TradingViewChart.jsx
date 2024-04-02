@@ -1,27 +1,54 @@
-import React, { useEffect } from "react";
-import Datafeed from "../trading-view/datafeed";
-import TradingView from "../charting_library/charting_library.standalone";
+import { useEffect, useState } from "react";
 
-const TradingViewChart = () => {
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+function TradingViewWidget() {
+  const [stock, setStock] = useState([]);
+
+  const getStock = async () => {
+    try {
+      const res = await fetch(
+        "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7"
+      );
+      const result = await res.json();
+      setStock(result.prices);
+      console.log(stock);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "text/jsx";
-    script.src = "/public/charting_library/charting_library.js";
-
-    document.head.appendChild(script);
-    window.tvWidget = new TradingView.widget({
-      symbol: "Bitfinex:BTC/USD", // default symbol
-      interval: "1D", // default interval
-      fullscreen: true, // displays the chart in the fullscreen mode
-      container: "tv_chart_container",
-      datafeed: Datafeed,
-      library_path: "/charting_library/",
-    });
-
-    return () => script.remove();
+    getStock();
   }, []);
 
-  return <div id="tv_chart_container"></div>;
-};
+  const myData = {
+    label: stock.slice(0, 10).map((coin) => {
+      console.log(coin);
+    }),
+  };
 
-export default TradingViewChart;
+  return <div>{/* <Line data={myData} /> */}</div>;
+}
+
+export default TradingViewWidget;
