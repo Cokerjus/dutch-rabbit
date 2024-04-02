@@ -1,3 +1,5 @@
+import TradingViewWidget from "./TradingViewWidget";
+
 function Chart() {
   return (
     <div className="flex flex-col justify-center items-center py-5 md:py-10">
@@ -5,7 +7,7 @@ function Chart() {
         Easily trade with our bot
       </h3>
       {/* chart will be here */}
-
+      <TradingViewWidget />
       <div className="flex justify-center items-center gap-5 pt-5">
         <a
           href="https://poocoin.app/tokens/0x48a510a3394c2a07506d10910ebeff3e25b7a3f1"
