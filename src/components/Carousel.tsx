@@ -3,7 +3,7 @@ import { FaCartArrowDown } from "react-icons/fa";
 
 const responsive = {
   0: {
-    items: 2,
+    items: 1,
   },
   512: {
     items: 3,
