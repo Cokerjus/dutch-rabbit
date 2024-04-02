@@ -33,7 +33,7 @@ function ChartGraph() {
         "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7"
       );
       const result = await res.json();
-
+      console.log(result);
       setStock(result.prices);
     } catch (error) {
       console.error(error);
