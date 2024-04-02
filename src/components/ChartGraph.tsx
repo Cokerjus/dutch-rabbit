@@ -24,13 +24,13 @@ ChartJS.register(
 );
 
 function ChartGraph() {
-  const [stock, setStock] = useState<[]>([]);
+  const [stock, setStock] = useState<[] | null>([]);
   const [days, setDays] = useState(1);
 
   const getStock = async () => {
     try {
       const res = await fetch(
-        "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7"
+        `https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=${days}`
       );
       const result = await res.json();
       console.log(result);
@@ -56,9 +56,7 @@ function ChartGraph() {
     datasets: [
       {
         label: ` Price in Past Days ${days} in usd `,
-        data: stock?.map((value) => {
-          value[1];
-        }),
+        data: stock?.map((value) => value[1]),
         borderColor: "orange",
         borderWidth: 3,
       },
@@ -76,7 +74,7 @@ function ChartGraph() {
             },
           },
         }}
-        style={{ marginTop: "2rem", width: "100%" }}
+        style={{ marginTop: "2rem", width: "60rem" }}
       />
       <div className="flex justify-center items-center gap-5  py-3 mb-3">
         <button
