@@ -33,7 +33,6 @@ function ChartGraph() {
         `https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=${days}`
       );
       const result = await res.json();
-      console.log(result);
       setStock(result.prices);
     } catch (error) {
       console.error(error);
@@ -74,7 +73,7 @@ function ChartGraph() {
             },
           },
         }}
-        style={{ marginTop: "2rem", width: "60rem" }}
+        style={{ marginTop: "2rem", width: "100%" }}
       />
       <div className="flex justify-center items-center gap-5  py-3 mb-3">
         <button

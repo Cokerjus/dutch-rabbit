@@ -4,7 +4,7 @@ function Disclaimer() {
       <div className="max-w-screen-lg mx-auto">
         <div className="flex flex-col items-center justify-center h-full w-full text-white bg-gradient-to-r from-[#E1880D]/50 via-transparent to-black backdrop-blur-sm rounded-2xl p-5 py-12">
           <h3 className="text-4xl pb-5 tracking-wider font-normal font-display text-center w-full md:w-3/5 lg:w-2/5">
-            Get ready to experience speed with Cheetah
+            Get ready to experience speed with Rabbit
           </h3>
           <p className="text-white text-center mx-auto text-base w-full pb-5">
             Join now with Cheetah to speed up your trading and start earning

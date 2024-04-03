@@ -1,6 +1,6 @@
 function Jumbotron() {
   return (
-    <div className="bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('/assets/bg1.png')] min-h-[52rem] bg-center bg-cover bg-no-repeat relative">
+    <div className="bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('/assets/bg1.png')] min-h-[58rem] bg-center bg-cover bg-no-repeat relative">
       <div className="absolute bottom-0 h-full w-full bg-black bg-gradient-to-t via-transparent from-black bg-transparent opacity-90">
         <div className="absolute bottom-0 h-[40vh] w-full bg-black bg-gradient-to-t from-black bg-transparent" />
       </div>
@@ -8,15 +8,21 @@ function Jumbotron() {
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center">
           <div className="flex flex-col items-start justify-center">
             <div className="flex justify-between items-center border-2 border-white p-2 rounded-full w-full backdrop-blur-sm bg-black/10">
-              <p className="font-semibold text-white h-full bg-slate-800 px-6 py-2 rounded-full">
-                Dutch Rabbit
-              </p>
+              <div className="h-full bg-slate-800 px-6 py-2 rounded-full flex justify-center items-center gap-3">
+                <img
+                  src="/assets/logo (2).png"
+                  alt="logo"
+                  className="h-7 object-fill"
+                />
+                <p className="font-semibold text-white ">Dutch Rabbit</p>
+              </div>
               <p className="font-semibold text-white h-full bg-[#DC8400] px-6 py-2 rounded-full">
                 Get Started
               </p>
             </div>
-            <h1 className="text-2xl md:text-6xl text-white max-w-prose tracking-widest pt-8 md:pt-12 lg:pt-16 font-display text-center md:text-left">
-              Join The Future Of Dutch Rabbit Cryto World
+            <h1 className="text-xl md:text-5xl text-white max-w-prose tracking-widest pt-8 md:pt-12 lg:pt-12 font-display text-center md:text-left">
+              Welcome to Dutch Rabbit Token! The BunnyVerse on the Binance Smart
+              Chain for Meme based real-time Utilities for all Holders
             </h1>
             <p className="text-white text-base pt-5 w-full md:w-9/12 text-center md:text-left">
               Dutch Rabbit Token ($DURT) is a blockchain-based meme token
@@ -102,7 +108,7 @@ function Jumbotron() {
             </div>
 
             {/*  Coin Supply section   */}
-            <div className="pb-8 flex gap-5 md:gap-12">
+            <div className="pb-8 flex justify-center items-center gap-5 md:gap-12">
               <img
                 src="/assets/Ethereum.png"
                 alt="etherum"
@@ -117,6 +123,11 @@ function Jumbotron() {
                 src="/assets/Dollar Coin.png"
                 alt="etherum"
                 className="h-16 object-fill"
+              />
+              <img
+                src="/assets/logo (2).png"
+                alt="etherum"
+                className=" h-20 md:h-24 object-fill"
               />
             </div>
           </div>
