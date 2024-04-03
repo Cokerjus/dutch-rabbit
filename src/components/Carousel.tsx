@@ -6,11 +6,11 @@ const responsive = {
     items: 1,
   },
   512: {
+    items: 2,
+  },
+  768: {
     items: 3,
   },
-  //   768: {
-  //     items: 3,
-  //   },
 };
 
 const data = [
