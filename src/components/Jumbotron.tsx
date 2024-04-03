@@ -10,7 +10,7 @@ function Jumbotron() {
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center">
           <div className="flex flex-col items-start justify-center">
             <motion.div
-              initial={{ y: -100, opacity: 0 }}
+              initial={{ y: -50, opacity: 0 }}
               transition={{ duration: 0.8 }}
               whileInView={{ opacity: 1, y: 0 }}
               className="flex justify-between items-center border-2 border-white p-2 rounded-full w-full backdrop-blur-sm bg-black/10"

@@ -20,10 +20,21 @@ function Footer() {
             <h3 className="text-white text-4xl pb-3 font-bold ">Contact Us</h3>
             <a href="admin@dutchrabbit.co">admin@dutchrabbit.co</a>
             <div className="flex gap-8">
-              <FaTelegram size={30} />
-              <BsTwitterX size={30} />
-              <FaDiscord size={30} />
-              <FaFacebook size={30} />
+              <a href="https://t.me/DutchRabbitCoinOfficial" id="href">
+                <FaTelegram size={30} />
+              </a>
+              <a href="http://www.twitter.com/DutchRabbitDURT" id="href">
+                <BsTwitterX size={30} />
+              </a>
+              <a href="https://discord.com/invite/txPjFjEX" id="href">
+                <FaDiscord size={30} />
+              </a>
+              <a
+                href="https://www.facebook.com/Dutch-RabbitOfficial-102799439513356/"
+                id="href"
+              >
+                <FaFacebook size={30} />
+              </a>
             </div>
           </div>
         </div>

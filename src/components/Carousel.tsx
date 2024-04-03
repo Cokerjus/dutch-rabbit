@@ -15,7 +15,7 @@ const responsive = {
 
 const data = [
   {
-    title: "5% goes to Buy Tax",
+    title: "5% goes to Sell Tax",
   },
   {
     title: "1% is automatically added to the liquidity pool (LP)",
@@ -30,7 +30,7 @@ const data = [
     title: "2% goes to the Marketing Wallet",
   },
   {
-    title: "5% goes to Buy Tax",
+    title: "5% goes to Sell Tax",
   },
   {
     title: "1% is automatically added to the liquidity pool (LP)",
