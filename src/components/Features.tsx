@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function Features() {
   return (
     <div className="px-5 md:px-0 py-5 md:py-8 lg:py-12">
@@ -7,7 +9,12 @@ function Features() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {/* item 1 */}
-          <div className="p-[2px] flex flex-col items-center justify-center bg-gradient-to-br from-orange-500 to-gray-50 rounded-2xl">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="p-[2px] flex flex-col items-center justify-center bg-gradient-to-br from-orange-500 to-gray-50 rounded-2xl"
+          >
             <div className="flex flex-col items-center justify-center h-full w-full text-white bg-gradient-to-br from-neutral-700 via-neutral-800 via-35% to-black backdrop-blur-sm rounded-2xl">
               <div className="p-24">
                 <h3 className="text-3xl text-left bg-gradient-to-r from-orange-100 to-orange-500 inline-block text-transparent bg-clip-text font-semibold pb-3">
@@ -20,9 +27,14 @@ function Features() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* item 2 */}
-          <div className="p-[2px] flex flex-col items-center justify-center bg-gradient-to-br from-orange-500 to-gray-50 rounded-2xl">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="p-[2px] flex flex-col items-center justify-center bg-gradient-to-br from-orange-500 to-gray-50 rounded-2xl"
+          >
             <div className="flex flex-col items-center justify-center text-white bg-gradient-to-br from-neutral-700 via-neutral-800 via-35% to-black backdrop-blur-sm rounded-2xl">
               <div className="p-24">
                 <h3 className="text-3xl text-left bg-gradient-to-r from-orange-100 to-orange-500 inline-block text-transparent bg-clip-text font-semibold pb-3">
@@ -36,9 +48,14 @@ function Features() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* item 3 */}
-          <div className="p-[2px] flex flex-col items-center justify-center bg-gradient-to-br from-orange-500 to-gray-50 rounded-2xl">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="p-[2px] flex flex-col items-center justify-center bg-gradient-to-br from-orange-500 to-gray-50 rounded-2xl"
+          >
             <div className="flex flex-col items-center justify-center text-white bg-gradient-to-br from-neutral-700 via-neutral-800 via-35% to-black backdrop-blur-sm rounded-2xl">
               <div className="p-24">
                 <h3 className="text-3xl text-left bg-gradient-to-r from-orange-100 to-orange-500 inline-block text-transparent bg-clip-text font-semibold pb-3">
@@ -54,9 +71,14 @@ function Features() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* item 4 */}
-          <div className="p-[2px] flex flex-col items-center justify-center bg-gradient-to-br from-orange-500 to-gray-50 rounded-2xl">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="p-[2px] flex flex-col items-center justify-center bg-gradient-to-br from-orange-500 to-gray-50 rounded-2xl"
+          >
             <div className="flex flex-col items-center justify-center text-white bg-gradient-to-br from-neutral-700 via-neutral-800 via-35% to-black backdrop-blur-sm rounded-2xl">
               <div className="p-24">
                 <h3 className="text-3xl text-left bg-gradient-to-r from-orange-100 to-orange-500 inline-block text-transparent bg-clip-text font-semibold pb-3">
@@ -73,7 +95,7 @@ function Features() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

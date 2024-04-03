@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import { FeatureCard } from ".";
 
 function Mission() {
@@ -12,7 +14,12 @@ function Mission() {
         <div className="flex flex-col gap-5">
           <FeatureCard body="Mission: The mission of Dutch Rabbit Token $DURT is to create a community-driven, meme-based deflationary blockchain project with unique utilities that incentivize users to hold and use the $DURT token. The project aims to provide a valuable asset for holders while also promoting transparency, inclusivity, and innovation. Vision: The vision of Dutch Rabbit is to become a leading meme-based blockchain project, known for its deflationary model and unique utilities. The project aims to bring together a community of meme enthusiasts and crypto investors, creating a platform for the exchange of value through the use of $DURT. Dutch Rabbit Token aims to be a project that is inclusive and accessible to all, while also driving innovation in the crypto world through its governance model and utility offerings." />
 
-          <div className="p-[1px] flex flex-col items-center justify-center bg-gradient-to-br to-orange-300/35 from-gray-50/35 rounded-2xl">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="p-[1px] flex flex-col items-center justify-center bg-gradient-to-br to-orange-300/35 from-gray-50/35 rounded-2xl"
+          >
             <div className="flex flex-col items-center justify-center h-full w-full text-white bg-gradient-to-br from-neutral-700 via-neutral-800 via-35% to-black backdrop-blur-sm rounded-2xl">
               <div className="p-24 flex flex-col justify-center items-center">
                 <h3 className="text-3xl text-left bg-gradient-to-r to-orange-100 from-orange-500 inline-block text-transparent bg-clip-text font-semibold pb-8 font-display">
@@ -54,7 +61,7 @@ function Mission() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

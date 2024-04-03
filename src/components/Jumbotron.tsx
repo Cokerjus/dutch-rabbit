@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function Jumbotron() {
   return (
     <div className="bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('/assets/bg1.png')] min-h-[58rem] bg-center bg-cover bg-no-repeat relative">
@@ -7,7 +9,12 @@ function Jumbotron() {
       <div className="absolute bottom-0 h-full w-full py-8 md:py-12 lg:py-16 px-5 md:px-0">
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center">
           <div className="flex flex-col items-start justify-center">
-            <div className="flex justify-between items-center border-2 border-white p-2 rounded-full w-full backdrop-blur-sm bg-black/10">
+            <motion.div
+              initial={{ y: -100, opacity: 0 }}
+              transition={{ duration: 0.8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              className="flex justify-between items-center border-2 border-white p-2 rounded-full w-full backdrop-blur-sm bg-black/10"
+            >
               <div className="h-full bg-slate-800 px-6 py-2 rounded-full flex justify-center items-center gap-3">
                 <img
                   src="/assets/logo (2).png"
@@ -19,7 +26,7 @@ function Jumbotron() {
               <p className="font-semibold text-white h-full bg-[#DC8400] px-6 py-2 rounded-full">
                 Get Started
               </p>
-            </div>
+            </motion.div>
             <h1 className="text-xl md:text-5xl text-white max-w-prose tracking-widest pt-8 md:pt-12 lg:pt-12 font-display text-center md:text-left">
               Welcome to Dutch Rabbit Token! The BunnyVerse on the Binance Smart
               Chain for Meme based real-time Utilities for all Holders

@@ -1,8 +1,15 @@
+import { motion } from "framer-motion";
+
 function Disclaimer() {
   return (
     <div className="px-5 md:px-0 py-5 md:py-8 lg:py-12">
       <div className="max-w-screen-lg mx-auto">
-        <div className="flex flex-col items-center justify-center h-full w-full text-white bg-gradient-to-r from-[#E1880D]/50 via-transparent to-black backdrop-blur-sm rounded-2xl p-5 py-12">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 0.8 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="flex flex-col items-center justify-center h-full w-full text-white bg-gradient-to-r from-[#E1880D]/50 via-transparent to-black backdrop-blur-sm rounded-2xl p-5 py-12"
+        >
           <h3 className="text-4xl pb-5 tracking-wider font-normal font-display text-center w-full md:w-3/5 lg:w-2/5">
             Get ready to experience speed with Rabbit
           </h3>
@@ -22,8 +29,13 @@ function Disclaimer() {
               </div>
             </div>
           </a>
-        </div>
-        <div className="flex flex-col justify-center items-center pt-16">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 0.8 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="flex flex-col justify-center items-center pt-16"
+        >
           <h3 className="text-4xl pb-5 tracking-wider font-bold font-display bg-gradient-to-r from-orange-100 to-orange-500 inline-block text-transparent bg-clip-text text-center">
             Disclaimer
           </h3>
@@ -43,7 +55,7 @@ function Disclaimer() {
             can afford to lose and to consult with a financial advisor if you
             have any questions or concerns.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
