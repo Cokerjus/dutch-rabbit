@@ -22,7 +22,7 @@ export default function App() {
     restDelta: 0.001,
   });
 
-  const [showModal, setShowModal] = useState<boolean>(true);
+  const [showModal, setShowModal] = useState<boolean>(false);
 
   const handleClose = useCallback(() => {
     setTimeout(() => {
