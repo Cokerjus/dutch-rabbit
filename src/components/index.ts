@@ -10,4 +10,3 @@ export { default as FeatureCard } from "./FeatureCard";
 export { default as Mission } from "./Mission";
 export { default as Disclaimer } from "./Disclaimer";
 export { default as Footer } from "./Footer";
-export { default as Modal } from "./Modal";
