@@ -15,10 +15,25 @@ const responsive = {
 
 const data = [
   {
-    title: "5% goes to Sell Tax",
+    title: "TS: 1 Billion",
   },
   {
-    title: "1% is automatically added to the liquidity pool (LP)",
+    title: "Initial Burn: 70%",
+  },
+  {
+    title: "Circulating Supply: 30%",
+  },
+  {
+    title: "Buy Tax: 5%",
+  },
+  {
+    title: "Auto LP: 1%",
+  },
+  {
+    title: "Auto Burn: 1%",
+  },
+  {
+    title: "Ref: 1% (MOCHI INU)",
   },
   {
     title: "1% is automatically burned",
@@ -27,25 +42,19 @@ const data = [
     title: "1% is distributed as reflection (MOCHI INU)",
   },
   {
-    title: "2% goes to the Marketing Wallet",
+    title: "MW: 2%",
   },
   {
-    title: "5% goes to Sell Tax",
+    title: "Sell Tax: 5%",
   },
   {
-    title: "1% is automatically added to the liquidity pool (LP)",
+    title: "Auto LP: 1%",
   },
   {
-    title: "1% is automatically burned",
+    title: "Ref: 1% (MOCHI INU)",
   },
   {
-    title: "1% is distributed as reflection (MOCHI INU)",
-  },
-  {
-    title: "3% goes to the Marketing Wallet",
-  },
-  {
-    title: "Total Supply (TS): 1 Billion",
+    title: "MW: 3%",
   },
 ];
 
