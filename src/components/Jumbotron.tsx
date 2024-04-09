@@ -31,7 +31,7 @@ function Jumbotron({ handleClose }: Props) {
                   Get Started
                 </p>
               </motion.div>
-              <h1 className="text-xl md:text-7xl text-white max-w-prose tracking-widest pt-8 md:pt-12 lg:pt-12 font-display text-center md:text-left">
+              <h1 className="text-3xl md:text-7xl text-white max-w-prose tracking-widest pt-8 md:pt-12 lg:pt-12 font-display text-center md:text-left">
                 Welcome to Dutch Rabbit Token!
               </h1>
               <p className="text-white text-base pt-5 w-full md:w-9/12 text-center md:text-left">
