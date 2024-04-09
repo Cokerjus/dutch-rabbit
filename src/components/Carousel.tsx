@@ -8,7 +8,7 @@ const responsive = {
   512: {
     items: 2,
   },
-  920: {
+  1200: {
     items: 3,
   },
 };
@@ -67,7 +67,7 @@ const items = data.map((view) => {
       <div className="bg-gray-300 rounded-full p-2 text-[#DC8400]">
         <FaCartArrowDown size={25} />
       </div>
-      <p className="text-white text-center max-w-56 w-48">{view.title}</p>
+      <p className="text-white text-center max-w-[50rem] w-96">{view.title}</p>
     </div>
   );
 });
