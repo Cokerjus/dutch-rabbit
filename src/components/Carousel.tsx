@@ -8,7 +8,7 @@ const responsive = {
   512: {
     items: 2,
   },
-  768: {
+  920: {
     items: 3,
   },
 };
