@@ -6,9 +6,9 @@ interface Props {
 function Jumbotron({ handleClose }: Props) {
   return (
     <>
-      <div className="bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('/assets/bg1.png')] min-h-[58rem] bg-center bg-cover bg-no-repeat relative">
+      <div className="bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('/assets/bg1.png')] min-h-[40rem] md:mb-12 lg:mb-16 bg-center bg-cover bg-no-repeat relative">
         <div className="absolute bottom-0 h-full w-full bg-black bg-gradient-to-t via-transparent from-black bg-transparent opacity-90">
-          <div className="absolute bottom-0 h-[40vh] w-full bg-black bg-gradient-to-t from-black bg-transparent" />
+          <div className="absolute bottom-0 h-[30vh] w-full bg-black bg-gradient-to-t from-black bg-transparent" />
         </div>
         <div className="absolute bottom-0 h-full w-full py-8 md:py-12 lg:py-16 px-5 md:px-0">
           <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center">
@@ -65,19 +65,19 @@ function Jumbotron({ handleClose }: Props) {
                 the utility of the token, which is achieved by utilizing a
                 unique deflationary model.
               </p> */}
-              <div className="flex justify-center items-center gap-5 py-3 md:py-5 w-full md:w-8/12">
+              <div className="flex justify-center items-center gap-5 py-3 md:py-5 w-full">
                 <a
                   onClick={handleClose}
                   // href="https://poocoin.app/tokens/0x48a510a3394c2a07506d10910ebeff3e25b7a3f1"
-                  className="bg-[#DC8400] hover:bg-[#dcb700] p-1 md:p-2 text-xl font-semibold text-white capitalize rounded-full w-full text-center"
+                  className="bg-[#DC8400] hover:bg-[#dcb700] p-2.5 md:p-3 text-xl font-semibold text-white capitalize rounded-full w-full text-center"
                 >
                   Whitepaper Document
                 </a>
-                <div className="w-full"></div>
+                <div className="w-full hidden md:block"></div>
               </div>
               {/* Team Section */}
 
-              <div className="flex justify-center items-center gap-5 py-5 w-full">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-5 py-5 w-full ">
                 <div
                   className="overflow-hidden w-full cursor-pointer"
                   onClick={handleClose}
