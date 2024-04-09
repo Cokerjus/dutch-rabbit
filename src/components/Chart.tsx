@@ -3,9 +3,9 @@ import ChartGraph from "./ChartGraph";
 function Chart() {
   return (
     <div className="flex flex-col justify-center items-center px-5 md:px-0 py-5 md:py-10">
-      <h3 className="text-white text-4xl font-bold font-display tracking-wider">
+      {/* <h3 className="text-white text-4xl font-bold font-display tracking-wider">
         Easily trade with our bot
-      </h3>
+      </h3> */}
       {/* chart will be here */}
       <ChartGraph />
       <div className="flex justify-center items-center gap-5 pt-5">

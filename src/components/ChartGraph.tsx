@@ -63,37 +63,39 @@ function ChartGraph() {
   };
 
   return (
-    <div>
-      <Line
-        data={myData}
-        options={{
-          elements: {
-            point: {
-              radius: 1,
+    <div className="w-full px-3 md:px-10">
+      <div>
+        <Line
+          data={myData}
+          options={{
+            elements: {
+              point: {
+                radius: 1,
+              },
             },
-          },
-        }}
-        style={{ marginTop: "2rem", width: "100%" }}
-      />
-      <div className="flex justify-center items-center gap-5  py-3 mb-3">
-        <button
-          className="bg-[#DC8400] hover:bg-[#dcb700] px-8 py-2 text-base md:text-lg font-semibold text-white uppercase rounded-full text-center"
-          onClick={() => setDays(1)}
-        >
-          24 hours
-        </button>
-        <button
-          className="bg-[#DC8400] hover:bg-[#dcb700] px-8 py-2 text-base md:text-lg font-semibold text-white uppercase rounded-full text-center"
-          onClick={() => setDays(30)}
-        >
-          1 Month
-        </button>
-        <button
-          className="bg-[#DC8400] hover:bg-[#dcb700] px-8 py-2 text-base md:text-lg font-semibold text-white uppercase rounded-full text-center"
-          onClick={() => setDays(365)}
-        >
-          1 Year
-        </button>
+          }}
+          style={{ marginTop: "2rem", width: "60rem" }}
+        />
+        <div className="flex justify-center items-center gap-5  py-3 mb-3">
+          <button
+            className="bg-[#DC8400] hover:bg-[#dcb700] px-8 py-2 text-base md:text-lg font-semibold text-white uppercase rounded-full text-center"
+            onClick={() => setDays(1)}
+          >
+            24 hours
+          </button>
+          <button
+            className="bg-[#DC8400] hover:bg-[#dcb700] px-8 py-2 text-base md:text-lg font-semibold text-white uppercase rounded-full text-center"
+            onClick={() => setDays(30)}
+          >
+            1 Month
+          </button>
+          <button
+            className="bg-[#DC8400] hover:bg-[#dcb700] px-8 py-2 text-base md:text-lg font-semibold text-white uppercase rounded-full text-center"
+            onClick={() => setDays(365)}
+          >
+            1 Year
+          </button>
+        </div>
       </div>
     </div>
   );

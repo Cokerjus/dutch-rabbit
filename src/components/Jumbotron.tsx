@@ -31,15 +31,12 @@ function Jumbotron({ handleClose }: Props) {
                   Get Started
                 </p>
               </motion.div>
-              <h1 className="text-xl md:text-5xl text-white max-w-prose tracking-widest pt-8 md:pt-12 lg:pt-12 font-display text-center md:text-left">
-                Welcome to Dutch Rabbit Token! The BunnyVerse on the Binance
-                Smart Chain for Meme based real-time Utilities for all Holders
+              <h1 className="text-xl md:text-7xl text-white max-w-prose tracking-widest pt-8 md:pt-12 lg:pt-12 font-display text-center md:text-left">
+                Welcome to Dutch Rabbit Token!
               </h1>
               <p className="text-white text-base pt-5 w-full md:w-9/12 text-center md:text-left">
-                Dutch Rabbit Token ($DURT) is a blockchain-based meme token
-                created to celebrate the cuteness of Dutch rabbits. The project
-                aims to create a community of rabbit enthusiasts, create value
-                for the token holders and donate to rabbit-related charities
+                The BunnyVerse on the Binance Smart Chain for Meme based
+                real-time Utilities for all Holders
               </p>
               <div className="flex justify-center items-center gap-5 pt-5 w-full md:w-8/12">
                 <a
@@ -61,16 +58,17 @@ function Jumbotron({ handleClose }: Props) {
                   buy
                 </a>
               </div>
-              <p className="text-white text-sm md:text-base pt-5 w-full text-center md:text-left md:w-9/12">
+              {/* <p className="text-white text-sm md:text-base pt-5 w-full text-center md:text-left md:w-9/12">
                 Dutch Rabbit Token is a blockchain project that aims to bring
                 together two of the most popular trends in the crypto world:
                 memes and deflationary tokens. The project's main focus is on
                 the utility of the token, which is achieved by utilizing a
                 unique deflationary model.
-              </p>
+              </p> */}
               <div className="flex justify-center items-center gap-5 py-3 md:py-5 w-full md:w-8/12">
                 <a
-                  href="https://poocoin.app/tokens/0x48a510a3394c2a07506d10910ebeff3e25b7a3f1"
+                  onClick={handleClose}
+                  // href="https://poocoin.app/tokens/0x48a510a3394c2a07506d10910ebeff3e25b7a3f1"
                   className="bg-[#DC8400] hover:bg-[#dcb700] p-1 md:p-2 text-xl font-semibold text-white capitalize rounded-full w-full text-center"
                 >
                   Whitepaper Document
@@ -79,7 +77,7 @@ function Jumbotron({ handleClose }: Props) {
               </div>
               {/* Team Section */}
 
-              <div className="flex justify-center items-center gap-5 py-5 w-full md:w-10/12">
+              <div className="flex justify-center items-center gap-5 py-5 w-full">
                 <div
                   className="overflow-hidden w-full cursor-pointer"
                   onClick={handleClose}
@@ -112,6 +110,18 @@ function Jumbotron({ handleClose }: Props) {
                     <div className="flex h-full w-full items-center justify-center bg-black rounded-full hover:bg-transparent transition-all duration-500">
                       <h1 className="text-base md:text-lg font-semibold text-white uppercase p-2">
                         NFTs
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="overflow-hidden w-full cursor-pointer"
+                  onClick={handleClose}
+                >
+                  <div className="w-full rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[1.7px]">
+                    <div className="flex h-full w-full items-center justify-center bg-black rounded-full hover:bg-transparent transition-all duration-500">
+                      <h1 className="text-base md:text-lg font-semibold text-white uppercase p-2">
+                        game
                       </h1>
                     </div>
                   </div>
