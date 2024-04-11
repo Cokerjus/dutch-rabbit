@@ -67,8 +67,7 @@ function Jumbotron({ handleClose }: Props) {
               </p> */}
               <div className="flex justify-center items-center gap-5 py-3 md:py-5 w-full">
                 <a
-                  onClick={handleClose}
-                  // href="https://poocoin.app/tokens/0x48a510a3394c2a07506d10910ebeff3e25b7a3f1"
+                  href="https://dutch-rabbit.gitbook.io/dutch-rabbit"
                   className="bg-[#DC8400] hover:bg-[#dcb700] p-2.5 md:p-3 text-xl font-semibold text-white capitalize rounded-full w-full text-center"
                 >
                   Whitepaper Document
