@@ -31,7 +31,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative bg-black">
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-orange-400 origin-[0%] z-[1000]"
         style={{ scaleX }}
@@ -69,15 +69,33 @@ export default function App() {
           </div>
         </div>
       )}
-      <Jumbotron handleClose={handleClose} />
+      <section id="home">
+        <Jumbotron handleClose={handleClose} />
+      </section>
+
       <Chart />
-      <Tokemonic />
-      <Features />
-      <RoadMap />
-      <Utilities />
-      <Mission />
-      <Disclaimer />
-      <Footer />
+
+      <section id="tokemonic">
+        <Tokemonic />
+      </section>
+      <section id="features">
+        <Features />
+      </section>
+      <section id="roadmap">
+        <RoadMap />
+      </section>
+      <section id="utilities">
+        <Utilities />
+      </section>
+      <section id="mission">
+        <Mission />
+      </section>
+      <section id="disclaimer">
+        <Disclaimer />
+      </section>
+      <section id="footer">
+        <Footer />
+      </section>
     </div>
   );
 }

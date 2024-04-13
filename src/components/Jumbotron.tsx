@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SideBar from "./SideBar";
 
 interface Props {
   handleClose: () => void;
@@ -27,9 +28,7 @@ function Jumbotron({ handleClose }: Props) {
                   />
                   <p className="font-semibold text-white ">Dutch Rabbit</p>
                 </div>
-                <p className="font-semibold text-white h-full bg-[#DC8400] px-6 py-2 rounded-full">
-                  Get Started
-                </p>
+                <SideBar />
               </motion.div>
               <h1 className="text-3xl md:text-7xl text-white max-w-prose tracking-widest pt-8 md:pt-12 lg:pt-12 font-display text-center md:text-left">
                 Welcome to Dutch Rabbit Token!
@@ -58,13 +57,6 @@ function Jumbotron({ handleClose }: Props) {
                   buy
                 </a>
               </div>
-              {/* <p className="text-white text-sm md:text-base pt-5 w-full text-center md:text-left md:w-9/12">
-                Dutch Rabbit Token is a blockchain project that aims to bring
-                together two of the most popular trends in the crypto world:
-                memes and deflationary tokens. The project's main focus is on
-                the utility of the token, which is achieved by utilizing a
-                unique deflationary model.
-              </p> */}
               <div className="flex justify-center items-center gap-5 py-3 md:py-5 w-full">
                 <a
                   href="https://dutch-rabbit.gitbook.io/dutch-rabbit"
@@ -74,8 +66,8 @@ function Jumbotron({ handleClose }: Props) {
                 </a>
                 <div className="w-full hidden md:block"></div>
               </div>
-              {/* Team Section */}
 
+              {/* Btn Section */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-5 py-5 w-full ">
                 <div
                   className="overflow-hidden w-full cursor-pointer"
