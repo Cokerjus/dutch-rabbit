@@ -27,11 +27,11 @@ function Utilities() {
           />
           <FeatureCard
             title="CHARITY DONATIONS"
-            body="A portion of each transaction fee is donated to rabbit-related charities, supporting their mission and improving the lives of rabbits. This feature allows token holders to make a positive impact on a cause they care about."
+            body="A portion of each transaction fee is donated to Charity , supporting the well-being of the less privilege in our society and improving everyone's live. This feature allows $DURT Holders to make a positive impact on the most valuable assets on earth, HUMAN-BEING."
           />
           <FeatureCard
             title="ACCESS TO EXCLUSIVE CONTENTS"
-            body="Holders of #DURT can gain access to exclusive meme-based content, such as digital art, NFTs, and merchandise. This can be a valuable utility for meme enthusiasts and collectors."
+            body="Holders of $DURT can gain access to exclusive meme-based content, such as digital art, NFTs, and merchandise. This can be a valuable utility for meme enthusiasts and collectors."
           />
           <FeatureCard
             title="GOVERNANCE"

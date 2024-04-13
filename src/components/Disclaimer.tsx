@@ -14,8 +14,7 @@ function Disclaimer() {
             Get ready to experience speed with Rabbit
           </h3>
           <p className="text-white text-center mx-auto text-base w-full pb-5">
-            Join now with Cheetah to speed up your trading and start earning
-            now.
+            Join now with Rabbit to speed up your trading and start earning now.
           </p>
           <a
             href="https://pancakeswap.finance/swap?outputCurrency=0x48a510A3394C2A07506d10910EBEFf3E25b7a3f1"

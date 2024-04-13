@@ -86,12 +86,11 @@ function Features() {
                 </h3>
 
                 <p>
-                  Governance: Dutch Rabbit Token is a community-drivenproject
-                  and as such, the community will be able to vote on
-                  importantdecisions as relating to the project. Holders of
-                  $DURT will be able to submit proposals and vote on proposals,
-                  ensuring that the project remains in the hands of the
-                  community.
+                  Governance: Dutch Rabbit Token is a community-driven project
+                  and as such, the community will be able to vote on important
+                  decisions as relating to the project. Holders of $DURT will be
+                  able to submit proposals and vote on proposals, ensuring that
+                  the project remains in the hands of the community.
                 </p>
               </div>
             </div>
