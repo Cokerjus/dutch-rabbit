@@ -13,6 +13,7 @@ import {
 } from "./components";
 import { useCallback, useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { Toaster } from "./components/ui/toaster";
 
 export default function App() {
   const { scrollYProgress } = useScroll();
@@ -73,8 +74,9 @@ export default function App() {
         <Jumbotron handleClose={handleClose} />
       </section>
 
-      <Chart />
-
+      <section id="chart">
+        <Chart />
+      </section>
       <section id="tokemonic">
         <Tokemonic />
       </section>
@@ -96,6 +98,7 @@ export default function App() {
       <section id="footer">
         <Footer />
       </section>
+      <Toaster />
     </div>
   );
 }

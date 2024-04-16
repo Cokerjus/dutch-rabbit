@@ -7,6 +7,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Contract from "./Contract";
 
 function SideBar() {
   return (
@@ -105,9 +106,7 @@ function SideBar() {
             </Link>
           </SheetClose>
           <SheetClose asChild>
-            <div className="text-black dark:text-white hover:underline capitalize decoration-2 underline-offset-4 cursor-pointer">
-              contract
-            </div>
+            <Contract />
           </SheetClose>
           <SheetClose asChild>
             <Link

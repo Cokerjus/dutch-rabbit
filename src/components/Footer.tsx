@@ -1,5 +1,6 @@
 import { BsTwitterX } from "react-icons/bs";
 import { FaDiscord, FaFacebook, FaTelegram } from "react-icons/fa6";
+import { Link } from "react-scroll";
 
 function Footer() {
   return (
@@ -10,11 +11,56 @@ function Footer() {
         </h3>
         <div className="flex flex-col md:flex-row md:justify-between items-center md:items-end border-b-2 py-6">
           <div className="flex gap-4 text-white">
-            <p>Home</p>
-            <p>Features</p>
-            <p>FAQ</p>
-            <p>Roadmap</p>
-            <p>Security Audit</p>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="home"
+              className="cursor-pointer"
+            >
+              Home
+            </Link>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="chart"
+              className="cursor-pointer"
+            >
+              Chart
+            </Link>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="tokemonic"
+              className="cursor-pointer"
+            >
+              Tokemonic
+            </Link>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="roadmap"
+              className="cursor-pointer"
+            >
+              Roadmap
+            </Link>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="utilities"
+              className="cursor-pointer"
+            >
+              Utilities
+            </Link>
           </div>
           <div className="flex flex-col items-center md:items-end gap-3 text-white">
             <h3 className="text-white text-4xl pb-3 font-bold ">Contact Us</h3>

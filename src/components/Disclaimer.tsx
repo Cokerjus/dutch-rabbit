@@ -10,11 +10,12 @@ function Disclaimer() {
           whileInView={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center justify-center h-full w-full text-white bg-gradient-to-r from-[#E1880D]/50 via-transparent to-black backdrop-blur-sm rounded-2xl p-5 py-12"
         >
-          <h3 className="text-4xl pb-5 tracking-wider font-normal font-display text-center w-full md:w-3/5 lg:w-2/5">
-            Get ready to experience speed with Rabbit
+          <h3 className="text-4xl pb-5 tracking-wider font-normal font-display text-center w-full md:w-3/5 lg:w-3/5">
+            Get ready to experience speed with Dutch Rabbit
           </h3>
           <p className="text-white text-center mx-auto text-base w-full pb-5">
-            Join now with Rabbit to speed up your trading and start earning now.
+            Join now with Dutch Rabbit to speed up your trading and start
+            earning now.
           </p>
           <a
             href="https://pancakeswap.finance/swap?outputCurrency=0x48a510A3394C2A07506d10910EBEFf3E25b7a3f1"
