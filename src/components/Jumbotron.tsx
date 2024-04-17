@@ -127,18 +127,18 @@ function Jumbotron({ handleClose }: Props) {
                   className="h-16 object-fill"
                 />
                 <img
-                  src="/assets/Solana.png"
-                  alt="etherum"
+                  src="/assets/bnb.png"
+                  alt="bnb"
                   className="h-16 object-fill"
                 />
                 <img
                   src="/assets/Dollar Coin.png"
-                  alt="etherum"
+                  alt="solana"
                   className="h-16 object-fill"
                 />
                 <img
                   src="/assets/logo (2).png"
-                  alt="etherum"
+                  alt="dutch-rabbit"
                   className=" h-20 md:h-24 object-fill"
                 />
               </div>

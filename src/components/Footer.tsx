@@ -64,7 +64,7 @@ function Footer() {
           </div>
           <div className="flex flex-col items-center md:items-end gap-3 text-white">
             <h3 className="text-white text-4xl pb-3 font-bold ">Contact Us</h3>
-            <a href="admin@dutchrabbit.co">admin@dutchrabbit.co</a>
+            <a href="admin@dutchrabbit.co">admin@dutch-rabbit.com</a>
             <div className="flex gap-8">
               <a href="https://t.me/DutchRabbitCoinOfficial" id="href">
                 <FaTelegram size={30} />
